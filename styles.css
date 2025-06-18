@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f5f7;
+    color: #333;
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+    background: linear-gradient(90deg, #611f69, #350d36);
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    background-color: #ddd;
+    padding: 0.8rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #350d36;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #611f69;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.tarjeta {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.tarjeta h2 {
+    font-family: 'Playfair Display', serif;
+    color: #350d36;
+    margin-bottom: 1rem;
+}
+
+.tarjeta img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    font-family: inherit;
+}
+
+form button {
+    background-color: #611f69;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #350d36;
+}
+
+.volver {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.volver a {
+    text-decoration: none;
+    color: #611f69;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.volver a:hover {
+    color: #350d36;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ddd;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+/* --- Diseño responsivo básico --- */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        padding: 0 1rem;
+    }
+
+    .tarjeta {
+        padding: 1rem;
+    }
+}
